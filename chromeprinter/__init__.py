@@ -46,3 +46,5 @@ class Client():
         im.save(f"{ctime}.png")
 
         driver.quit()
+        
+        return f"{ctime}.png"
