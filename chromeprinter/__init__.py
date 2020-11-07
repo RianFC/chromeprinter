@@ -5,7 +5,7 @@ from PIL import Image
 class Client():
     def __init__(self):
         options = webdriver.FirefoxOptions()
-        options..set_preference("intl.accept_languages", 'pt-br')
+        options.set_preference("intl.accept_languages", 'pt-br')
         options.headless = True
         self.driver = webdriver.Firefox(
             firefox_options=options)
