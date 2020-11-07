@@ -22,7 +22,7 @@ class Client():
         driver.get('https://duckduckgo.com/?q='+query)
         S = lambda X: driver.execute_script('return document.body.parentNode.scroll'+X)
         driver.set_window_size(1080+S('Width'),720+S('Height'))
-        element = driver.find_element_by_xpath('/html/body/div[2]/div[5]/div[3]/div/div[1]/div[5]/div[1]/div')
+        element = driver.find_element_by_xpath('//*[@id="zero_click_wrapper"]')
         location = element.location
         size = element.size
         ctime = time.time()
