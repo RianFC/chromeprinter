@@ -23,7 +23,7 @@ class Client():
         driver.get('https://duckduckgo.com/?q='+quote(query))
         S = lambda X: driver.execute_script('return document.body.parentNode.scroll'+X)
         driver.set_window_size(S('Width'),S('Height'))
-        a = ['//*[@id="zero_click_wrapper"]/div', '/html/body/div[2]/div[5]/div[3]/div/div[2]', '//*[@id="r1-0"]']
+        a = ['//*[@id="zero_click_wrapper"]/div', '//*[@id="r1-0"]']
         time.sleep(3)
         for i in a:
             try:
